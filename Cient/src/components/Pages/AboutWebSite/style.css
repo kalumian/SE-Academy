@@ -1,0 +1,50 @@
+section.Section-About {
+    margin: 5% auto 10%;
+    padding: 0 10%;
+}
+
+h2.About-title {
+    margin: 5% 0 1%;
+}
+
+.About-para {
+    line-height: 2.5;
+    letter-spacing: 0.8px;
+}
+
+ul.About-list {
+    list-style: none;
+    padding: 0 5%;
+}
+
+ul.ListSkils {
+    padding: 0 3%;
+    display: inline-flex;
+}
+
+li.About-ltem {
+    padding: 0.5% 0;
+}
+
+.connect-List{
+    margin-right: 15%;
+}
+.connect {
+    font-size: 1.1rem;
+}
+
+@media (max-width:1104px){
+    section.Section-About {
+        padding: 0 0%;
+        width: 80%;
+    }
+}
+@media (max-width:450px){
+    section.Section-About {
+        padding: 0 0%;
+        width: 80%;
+    }
+    li.About-ltem {
+        padding: 2.5% 0;
+    }
+}
