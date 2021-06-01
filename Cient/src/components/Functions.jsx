@@ -1,5 +1,4 @@
 // Edit Path In Show Video 
-
 export const PathNextEp =(episode , PathName)=>{
     const ArrayNextEp= PathName.split("/")
     ArrayNextEp.pop()
@@ -7,7 +6,6 @@ export const PathNextEp =(episode , PathName)=>{
    const PathNextEp =  ArrayNextEp.join("/")
    return PathNextEp
 }
-
 export const PathBackEp =(episode , PathName)=>{
     const ArrayNextEp= PathName.split("/")
     ArrayNextEp.pop()
@@ -15,13 +13,10 @@ export const PathBackEp =(episode , PathName)=>{
    const PathNextEp =  ArrayNextEp.join("/")
    return PathNextEp
 }
-
 export const Path_Back_One_Unit =( PathName)=>{
     const Path = PathName.split("/")
     Path.pop()
     const Path_Back_One_Unit =  Path.join("/")
    return Path_Back_One_Unit
 }
-
-
 //-------------------

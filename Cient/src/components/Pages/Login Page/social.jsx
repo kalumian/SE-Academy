@@ -2,7 +2,6 @@ import React from 'react'
 import {Social_Link, Social_Link_span,Social_under_li_lg} from '../../styled/PagesStyle'
 import '../../styled/styleLogin.css'
 
-
  const Social = ({title, icon, pd, Mode}) => {
     return(
         <Social_under_li_lg pd={pd}>

@@ -1,5 +1,4 @@
 import React from 'react'
-
 function LodingPage() {
     return (
         <div className='Loding'>
@@ -7,5 +6,4 @@ function LodingPage() {
         </div>
     )
 }
-
 export default LodingPage

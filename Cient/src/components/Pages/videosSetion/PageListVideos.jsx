@@ -6,14 +6,14 @@ function PageListVideos({color,nameChannel, Component,nameCourse, link}) {
         <>
             <div>
                     <Title_Home_Page style={{textShadow: `0 0 2px ${color}`}}>{nameCourse}</Title_Home_Page>
-                        <TitleChannelUnderTitle color={color}>{nameChannel}</TitleChannelUnderTitle>
-                    </div>
-                <div>
+                    <TitleChannelUnderTitle color={color}>{nameChannel}</TitleChannelUnderTitle>
+            </div>
+            <div>
                 <MT_25px/>
                     <div className='goToChannle'>
                     <a  className='link_videoList' href={link}><ButtonSubscribe color={color}  >زيارة القناة على اليوتيوب <IconSubscribe className="fab fa-youtube" ></IconSubscribe></ButtonSubscribe></a>
                     </div>
-                </div>
+            </div>
                 <LineHeader color={color} />
                 <ListVideo  color={color}>
                     {Component}

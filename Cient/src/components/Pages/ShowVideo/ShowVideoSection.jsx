@@ -15,16 +15,14 @@ function ShowVideoSection({ replayVideo ,color, title, episode, PathNextEps, Pat
                          height="100%" 
                          style={{borderRight: `solid 12px ${color}`,borderLeft: `solid 12px ${color}`,borderRadius: '15px',boxShadow: '0 0 7px black'}}
                          onEnded={() => changeStateSpanEndVideo()}
-                         
                          />
                         <SpanEndVidBox mode={StateSpanEndVideo}>
                             <Link to={PathNextEps}><LinkinSpanEndVidBox color={color}>الفيديو التالي</LinkinSpanEndVidBox></Link>
                             <Link href={PathName} onClick={() => replayVideo()}><LinkinSpanEndVidBox color={color}>إعادة الفيديو</LinkinSpanEndVidBox></Link>
                         </SpanEndVidBox>
-
                     </VideoSection>
-                    
                 <BtnSection>
+                    
                 <Arrow>
                     <ArrowIcon color={color} className="fas fa-arrow-right"></ArrowIcon>
                     <NextVid  to={PathNextEps} color={color} >الحلقة التالية</NextVid>

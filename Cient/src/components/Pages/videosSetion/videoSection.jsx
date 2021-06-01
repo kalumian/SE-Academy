@@ -8,13 +8,9 @@ import PageListVideos  from './PageListVideos'
 import axios from 'axios'
 import './style.css'
 import LodingPage from '../../Loding'
-
 //fetch Data
-
-
 export default class ListVideos extends Component{
     state = { TitleCourses : [], dataFromDataBase : [] , Loding : true}
-
     componentDidMount(){
         this.setState({Loding : true})
         axios.get(`https://server-se-academy.herokuapp.com/videos`)
@@ -23,8 +19,7 @@ export default class ListVideos extends Component{
             const CourseTitles = this.state.dataFromDataBase.map(item => item.course_title)
             this.setState({TitleCourses : CourseTitles, Loding:false})})
             .catch(err => console.log(err))
-    }
-
+ }
     render(){
         const backPage = () => {
             this.props.history.goBack()
@@ -32,10 +27,10 @@ export default class ListVideos extends Component{
         const LinkThisPage = this.props.location.pathname
         const Data = this.state.dataFromDataBase
         function Page(){
-           const infoDataArray =  Data.filter(item => item.course_title == data)
-           const infoDataComponentSort = infoDataArray.sort((e,a)=> e.episode > a.episode ? 1 : -1)
-           const infoDataComponent = infoDataComponentSort.map(item =>{
-               const { episode,  image_video, colorThem, video_title, _id} = item
+         const infoDataArray =  Data.filter(item => item.course_title == data)
+        const infoDataComponentSort = infoDataArray.sort((e,a)=> e.episode > a.episode ? 1 : -1)
+        const infoDataComponent = infoDataComponentSort.map(item =>{
+         const { episode,  image_video, colorThem, video_title, _id} = item
             return (
                 <ListVideosItem color={colorThem} >
                 <ListVideosItemComponent
@@ -63,14 +58,12 @@ export default class ListVideos extends Component{
                     nameChannel={nameChannel}
                     nameCourse={nameCourse}
                     Component={infoDataComponent}/>
-
             </>
             )
     }
     // تاكيد صحة الرابط
         const data = this.props.match.params.nameCourse;
         const Content = this.state.Loding ? <LodingPage/> : this.state.TitleCourses.includes(data) ? <Page/> : <NotFound/>
-
         return (
             <>
                     {Content}

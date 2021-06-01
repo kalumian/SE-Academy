@@ -37,6 +37,5 @@ const VideosSchema = new Schema({
         trim:true
     }
 })
-
 const Videos = mongoose.model('videos' ,VideosSchema );
 module.exports = Videos;

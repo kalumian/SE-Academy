@@ -6,8 +6,6 @@
   font-family: 'Cairo', sans-serif;
   direction: rtl;
 }
-
-
 @media  screen and  (max-width: 1024px){
   html{font-size: 15px;}
 }
@@ -16,7 +14,6 @@
 }
 @media  screen and  (max-width: 704px){
   html{font-size: 12px;}
-  
 }
 @media  screen and  (max-width: 614px){
   html{font-size: 12px;}
@@ -24,14 +21,11 @@
 }
 @media  screen and  (max-width: 425px){
   html{font-size: 11px;}
-  
 }
 @media  screen and  (max-width: 425px){
   html{font-size: 10px;}
-  
 }
 /* Loding Page  */
-
 .Loding {
   display: flex;
   align-items: center;
@@ -46,37 +40,30 @@ section.Section-About {
   margin: 5% auto 10%;
   padding: 0 10%;
 }
-
 h2.About-title {
   margin: 5% 0 1%;
 }
-
 .About-para {
   line-height: 2.5;
   letter-spacing: 0.8px;
 }
-
 ul.About-list {
   list-style: none;
   padding: 0 5%;
 }
-
 ul.ListSkils {
   padding: 0 3%;
   display: inline-flex;
 }
-
 li.About-ltem {
   padding: 0.5% 0;
 }
-
 .connect-List{
   margin-right: 15%;
 }
 .connect {
   font-size: 1.1rem;
 }
-
 @media (max-width:1104px){
   section.Section-About {
       padding: 0 0%;
@@ -92,13 +79,11 @@ li.About-ltem {
       padding: 2.5% 0;
   }
 }
-
 /*  Home Paragraf  */
 .header-content {
   width: 80%;
   margin: 0 auto;
 }
-
 a.Link-Aboute {
   color: #009688;
   font-weight: 700;

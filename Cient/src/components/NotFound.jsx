@@ -1,6 +1,5 @@
 import React from 'react'
 import {Title_Home_Page} from './styled/PagesStyle'
-
 function NotFound() {
     return (
         <>

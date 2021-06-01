@@ -8,8 +8,6 @@ class FieldComponent extends Component{
     }
     render(){
     //Function
-
-
     const ClickChange = () =>{
     this.state.stateElements ? this.setState({stateElements:false}) : this.setState({stateElements:true})
     }

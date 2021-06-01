@@ -3,8 +3,7 @@ import React from 'react'
 function Paragraf({title, paragraf, title2, paragraf2, link , link2, link3 ,paragraf3, title3, title_link,title_link2,title_link3}) {
     return (
         <div className="paragraf">
-
-            <h2 className="About-title">{title}</h2>
+        <h2 className="About-title">{title}</h2>
         <p className="About-para">{paragraf}</p>
         <a href={link} className="Link-Aboute">{title_link}</a>
         <h2 className="About-title">{title2}</h2>
@@ -13,8 +12,6 @@ function Paragraf({title, paragraf, title2, paragraf2, link , link2, link3 ,para
         <h2 className="About-title">{title3}</h2>
         <p className="About-para">{paragraf3}</p>
         <a href={link3} className="Link-Aboute">{title_link3}</a>
-
-
         </div>
     )
 }

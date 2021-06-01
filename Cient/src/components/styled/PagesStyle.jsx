@@ -13,10 +13,7 @@ const size = {
     laptopL: '1250px',
     desktop: '1440px'
   }
-
-
 // --------------------- Login Page ----------------------------
-
 export const Wrapper_Lg = styled.div`
     background: ${props => props.Mode ===  true ? "#012733" : "#ffffff"};
     height: 100%; min-height: 100vh;
@@ -178,8 +175,6 @@ margin-top: ${props => props.pd == "50px" ? "20px" : "0px"};
     margin-top: ${props => props.pd == "50px" ? "15px" : "0px"};
     margin-bottom: ${props => props.pd == "50px" ? "15px" : "0px"};
     width: 100px;
-
-
 }
 `
 export const Social_Link = styled(Link)`
@@ -211,12 +206,10 @@ export const Switch_continer = styled.div`
     justify-content: space-around;
 @media only screen and (min-width:${size.mobileS}) and (max-width: ${size.tablet}){
     width: 70px;
-    
 }
 @media only screen and (min-width:${size.tablet}) and (max-width:${size.laptopL}){
     width: 80px;
     padding: 15px 15px 0 0;
-
 }
 `
 //-------------------- -------------------------
@@ -307,7 +300,6 @@ width: 18rem;
 @media only screen and (min-width:${size.mobileS}) and (max-width: ${size.tablet}){
     height: 46px;
     width: 13rem;
-    
 }
    @media only screen and (min-width:${size.tablet}) and (max-width:${size.laptopL}){
     height: 46px;
@@ -332,7 +324,6 @@ position:absolute;
     height: 3rem;
     flex-direction:row;
     width: 100%;
-
     margin: 39rem auto;
 }
 @media only screen and (min-width:${size.tablet}) and (max-width:${size.laptopL}){
@@ -345,7 +336,6 @@ position:absolute;
 }
 `
 export const Social_under_li_Rp = styled(Social_under_li_lg)`
-
 @media only screen and (min-width:${size.mobileS}) and (max-width: ${size.tablet}){
     width: 100px;
 }
@@ -378,7 +368,6 @@ export const MidLine = styled(SmallLine)`
 `
 // header 
 export const Fields_Section = styled.div`
-
     &:hover ${SmallLine}{
         width:17%;
     } 
@@ -421,7 +410,6 @@ export const Field = styled.main`
     width:${props => props.state ?  "75%" : "50%" };
     height: ${props => props.state ?  "100%" : "55%" };
     justify-content: space-around;}
-
 @media only screen and  (max-width:425px){
     width:${props => props.state ?  "100%" : "60%" };
     height: ${props => props.state ?  "45rem" : "25rem" };
@@ -454,7 +442,6 @@ html{font-size: 10px;}
 margin-bottom: ${props => props.state ?  "4%" : "-6%" };;
 margin-top: 1%;
 };
-
     padding-bottom: 1%;
 `
 export const Content_Field = styled.p`
@@ -522,10 +509,8 @@ export const ReadLit = styled.span`
     opacity: ${props => props.state ?  "1" : "0" };
     transition: opacity 0.5s 1s , visibility 0.5s 1s;
 `
-
 export const MT_25px = styled.div`
 margin-top: 8%;
-
 `
 export const Navbar = styled.nav`
     border-right: 4px solid;
@@ -535,7 +520,6 @@ export const Navbar = styled.nav`
     background: ${props => props.color ? props.color : '#00bcd4'};
 `
 // ------------------------------------------ Slider Conainer --------------------------------------------- //
-
 export const SliderContiner = styled.div`
     display:flex;
     justify-content:center;
@@ -551,9 +535,7 @@ export const BackToHome = styled(Link)`
     font-size: 1.3rem;
     font-weight:600;
 `
-
 export const CoursesSection = styled(Fields)`
-
 @media only screen and (max-width: 768px){
 flex-direction: row;
 flex-wrap: wrap;
@@ -604,7 +586,6 @@ export const PCoursesCard = styled.p`
     padding: ${props => props.state ?  "0% 10%" : "0% 2%" };
     font-weight: ${props => props.state ?  "600" : "700" };
     transition: height 0.5s 0.5s , width 0.5s , padding 0.5s,  font-size 0.5s 0.7s,  color 0.5s 0.7s , font-weight 0.5s 0.7s;
-
 @media only screen and  (max-width:450px){
     width: ${props => props.state ?  "85%" : "86%" };
 }
@@ -639,7 +620,6 @@ export const ListCoursesSection = styled.main`
     }
 `
 // Body 
-
 export const ContainerCourseSection = styled.div`
      flex-direction: row-reverse;
     display: flex;
@@ -655,14 +635,12 @@ export const ContainerCourseSection = styled.div`
         margin: 5% 0%;
 }
 `
-
 export const CourseSectionLogo = styled.div`
    display: flex;
     flex-direction: column;
     width: 1%;
     justify-content: flex-end;
 `
-
 export const SpanBoxHover = styled.span`
  left: 50%;
     position: absolute;
@@ -703,7 +681,6 @@ export const ButtonBoxHover = styled.button`
     transition:  overflow 0.5s 0.5s , opacity 0.5s 0.5s   ;
 `
 // footer
-
 export const CourseTitle = styled.div`
     border-bottom: solid 2px  ${props => props.color};
     font-weight: bold;
@@ -714,11 +691,9 @@ export const CourseTitle = styled.div`
     border-left: solid 2px  ${props => props.color};
 @media only screen and  (max-width:626px){
         font-size: 2rem;}
-
 @media only screen and  (max-width:455px){
         font-size: 1.7rem;}
 `
-
 export const Image_course = styled.img`
     border-top: 3px solid ${props => props.color};
     border-left: 3px solid ${props => props.color};
@@ -726,41 +701,33 @@ export const Image_course = styled.img`
     border-radius: 3% 1% 0% 0%;
     border-right: 3px solid ${props => props.color};
 `
-
 export const Image_Logo = styled.img`
    border: 3px solid ${props => props.color};
     width: 5.3rem;
     border-radius: 50%;
     transform: translate(25%, -10%);
-    
 `
-
 export const CourseSection = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
     position: relative;
-
     &:hover ${SpanBoxHover} {
         height: 100%;
     }
     &:hover ${TextBoxHover} {
-        overflow: visible;
+       overflow: visible;
         opacity: 1;
     }
     &:hover ${ButtonBoxHover} {
         overflow: visible;
         opacity: 1;
         width: 8rem;
-        
     }
 
 `
 // ----------------------------------------------- Videos List Section ---------------------------------------------
-
 // Header
-
-
 export const TitleChannelUnderTitle = styled.h2`
     text-decoration: underline;
     text-align: center;
@@ -869,26 +836,22 @@ export const ListVideosItemNumber = styled.span`
 export const ListVideosItemName = styled.h3`
 font-size: 1.2rem;
 height:75px;
-
-    text-shadow: 0 0 1px ${props => props.color};
-    text-decoration: underline;
-    cursor: pointer;
-    transition: text-shadow 0.5s ;
-    overflow:hidden;
+text-shadow: 0 0 1px ${props => props.color};
+text-decoration: underline;
+cursor: pointer;
+transition: text-shadow 0.5s ;
+overflow:hidden;
 @media only screen and (max-width: 1080px){
-    font-size: 1rem;
-    height: 60px;
+font-size: 1rem;
+height: 60px;
 }
-
 @media only screen and (max-width: 768px){
-    font-size: 1rem;
-    height: 50px;}
-
+font-size: 1rem;
+height: 50px;}
 @media only screen and (max-width: 425px){
-    font-size: 1rem;
-    height: 40px;
+font-size: 1rem;
+height: 40px;
 }
-
 `
 export const ListVideosItemLink = styled(Link)`
 color:black;
@@ -913,9 +876,6 @@ export const ListVideosItem = styled.article`
 
 // Footer
 // ----------------------------------   Show Video   --------------------------------
-
-//header
-
 //body
 export const VideoSection = styled.section`
     margin: 5% auto;
@@ -936,7 +896,6 @@ export const VideoSection = styled.section`
 @media only screen and  (max-width:500px){height: 194px;width: 74%;}
 @media only screen and  (max-width:400px){height: 147px;width: 71%;}
 @media only screen and  (max-width:350px){height: 127px;width: 71%;}
-
 `
 export const SpanEndVidBox = styled.span`
      flex-direction: column;
@@ -951,7 +910,6 @@ export const SpanEndVidBox = styled.span`
     visibility: ${props => props.mode ? "visible" : "hidden"};
     opacity: ${props => props.mode ? "1" : "0"};
     transition: visibility 0.5s , opacity 0.5s ;
-    
 `
 export const LinkinSpanEndVidBox = styled.span`
     border: 2px solid ${props => props.color};
@@ -974,7 +932,6 @@ export const LinkinSpanEndVidBox = styled.span`
     background-color: rgba(0, 0, 0, 0);
     }
 `
-
 //footer
 export const BtnSection = styled.div`
     height: 12vh;
@@ -986,17 +943,13 @@ export const BtnSection = styled.div`
     padding: 0 4%;
 @media only screen and  (max-width:742px){width: 90%;}
 @media only screen and  (max-width:457px){width: 100%;}
-
-
 `
 export const ArrowIcon = styled.i`
     text-shadow: 0 0 5px ${props => props.color};
     font-size: 3rem;
     color: ${props => props.color};
     transition: text-shadow 0.4s;
-
 `
-
 export const NextVid = styled(Link)`
     margin: 0 5%;
     text-shadow: 0 0 2px rgb(75 161 255);
@@ -1008,7 +961,6 @@ export const NextVid = styled(Link)`
 @media only screen and  (max-width:742px){font-size: 1rem;}
 @media only screen and  (max-width:742px){font-size: 0.9rem;}
 `
-
 export const Arrow = styled.div`
     display: flex;
     width: 28%;
@@ -1028,7 +980,6 @@ export const ButtonInButtonSectionLink = styled.a`
     text-decoration:none;
     transition: color 0.3s;
 `
-
 export const ButtonInButtonSection = styled.button`
      border: 2px solid ${props => props.color};
     display: flex;
@@ -1048,8 +999,6 @@ export const ButtonInButtonSection = styled.button`
 @media only screen and  (max-width:457px){width: 12rem;height: 4rem;}
 @media only screen and  (max-width:400px){width: 12rem;height: 4rem;}
 `
-
-
 export const ButtonInButtonSectionIcon = styled.i`
          font-size: 2rem;
 `

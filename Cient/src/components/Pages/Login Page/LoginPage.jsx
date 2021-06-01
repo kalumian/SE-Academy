@@ -3,15 +3,11 @@ import { Wrapper_Lg, CenterItems, MainLg, Input_Lg, Lable_Lg, Btn_Lg, UnderStyle
 import Switch_Them from '../../styled/PagesStyle'
 import IconLink from '../../../images/icon3.png' 
 import Social from './social'
-
 // import Library------------|
 import React,{Component} from 'react'
 import { Link } from 'react-router-dom'
-
 //import Pages-------------|
-
 class Login_Page extends Component{
-
     render(){
         const Switch = this.props.Switch 
         const Mode = this.props.mode
@@ -31,12 +27,9 @@ class Login_Page extends Component{
                     <MainLg>
                         <Lable_Lg htmlFor="nameLp">اسم المستخدم او البريد الإلكتروني</Lable_Lg>
                         <Input_Lg id="nameLp" type="text"/>
-
                         <Lable_Lg htmlFor="passwordLp">كلمة المرور</Lable_Lg>
                         <Input_Lg type="password"   id=" passwordLp"/>
                         <Btn_Lg><Link to="/home">تسجيل الدخول</Link></Btn_Lg>
-
-            
                     </MainLg>
                     {/* --------------- Under Sections ---------------*/}
                     <UnderStyled_lg >
@@ -55,6 +48,5 @@ class Login_Page extends Component{
             </Wrapper_Lg>
         )
     }
-
 }
 export default Login_Page;

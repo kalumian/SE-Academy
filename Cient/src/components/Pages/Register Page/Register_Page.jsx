@@ -6,11 +6,8 @@ import Social from './social'
 // import Library------------|
 import React,{Component} from 'react'
 import { Link } from 'react-router-dom'
-
 //import Pages-------------|
-
 class Register_Page extends Component{
-
     render(){
         const Switch = this.props.Switch 
         const Mode = this.props.mode
@@ -51,8 +48,6 @@ class Register_Page extends Component{
                         <Input_Rp type="date"   id="dateRp"/>
 
                         <Link to="/"><Btn_Rp>انشاء حساب</Btn_Rp></Link>
-
-            
                     </MainRp>
                     {/* --------------- Under Sections ---------------*/}
                     <UnderStyled_Rp >
@@ -62,6 +57,5 @@ class Register_Page extends Component{
             </Wrapper_Rp>
         )
     }
-
 }
 export default Register_Page;

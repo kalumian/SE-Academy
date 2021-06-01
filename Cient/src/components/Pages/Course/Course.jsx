@@ -8,14 +8,9 @@ import NotFound from '../../NotFound'
 import axios from 'axios'
 import LodingPage from '../../Loding'
 require('dotenv').config()
-
 //fetch Data
-
-
-
 export default class Course extends Component{
     state = { TitleSections : [], dataFromDataBase : [], Loding : false}
-
     componentDidMount(){
         this.setState({Loding : true})
         axios.get(`https://server-se-academy.herokuapp.com/courses`)
@@ -26,11 +21,7 @@ export default class Course extends Component{
         })
         .catch(err => console.log(err))
     }
-
-
-
     render(){
-
        const backPage = () => {
             this.props.history.goBack()
         }
@@ -38,22 +29,22 @@ export default class Course extends Component{
         const thisLink = this.props.location.pathname
         const Data = this.state.dataFromDataBase
         function Page(){
-           const infoDataArray =  Data.filter(item => item.title_section == Section)
-           const infoDataComponent = infoDataArray.map(item =>{
-            const {course, title, colorThem, Date, number_oF_Video, logo_Channle, image_video, Channle, _id} = item
+        const infoDataArray =  Data.filter(item => item.title_section == Section)
+        const infoDataComponent = infoDataArray.map(item =>{
+        const {course, title, colorThem, Date, number_oF_Video, logo_Channle, image_video, Channle, _id} = item
             return (
                 <ContainerCourseSection>
                     <CoursesList
-                    key={_id}
-                     colorThem={colorThem}
-                      imageContent={image_video} 
-                       date={Date}
-                       logoChannel={logo_Channle} 
-                       nameChannel={Channle}
+                        key={_id}
+                        colorThem={colorThem}
+                        imageContent={image_video} 
+                        date={Date}
+                        logoChannel={logo_Channle} 
+                        nameChannel={Channle}
                         CountVid={number_oF_Video} 
                         course={course} 
                         title={title}
-                         thisLink={thisLink}/>
+                        thisLink={thisLink}/>
                 </ContainerCourseSection>
                )
            })
@@ -66,10 +57,7 @@ export default class Course extends Component{
                </>
             )
     }
-
     const Content =  this.state.Loding ? <LodingPage/> : this.state.TitleSections.includes(Section) ?<Page/> : <NotFound/>
-
-
         return (
             <div>
 

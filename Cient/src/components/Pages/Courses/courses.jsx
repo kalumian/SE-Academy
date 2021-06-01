@@ -11,7 +11,6 @@ require('dotenv').config()
 
 export default class Courses extends Component{
     state = { TitleSections : [], dataFromDataBase : [] , Loading : false }
-
     componentDidMount(){
         this.setState({Loading : true})
         axios.get(`https://server-se-academy.herokuapp.com/section`)
@@ -22,9 +21,7 @@ export default class Courses extends Component{
         })
         .catch(err => console.log(err))
     }
-
     render(){
-
         const backPage = () => {
             this.props.history.goBack()
         }
@@ -37,9 +34,9 @@ export default class Courses extends Component{
             return (
             <CoursCard
             key={_id}
-             Icon={icon} 
+            Icon={icon} 
             Title={title}
-             Description={description}
+            Description={description}
             colorThem={colorThem}
             SectionTitle={SectionTitle}
             beforPath={thisLink}/>

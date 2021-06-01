@@ -11,7 +11,7 @@ class CoursCard extends Component{
         const readMoreReadLet = this.state.stateParagraf ? "اقرأ المزيد" : "تفاصيل أقل"
         const {Icon, Title, colorThem, beforPath, SectionTitle} = this.props
     return (
-        <CoursesCard>
+    <CoursesCard>
         <CoursesCardIcon color={colorThem} className={Icon} ></CoursesCardIcon>
         <TitleCoursesCard>{Title}</TitleCoursesCard>
         <PCoursesCard state={this.state.stateParagraf} >{this.props.Description}</PCoursesCard>

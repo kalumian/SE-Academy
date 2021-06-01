@@ -4,7 +4,7 @@ import { Container, Title_Home_Page, SmallLine, MidLine, CoursesSection } from '
 function ListCoursesPage({component}) {
     return (
         <Container>
-         <Title_Home_Page>المسارات</Title_Home_Page>
+            <Title_Home_Page>المسارات</Title_Home_Page>
         <SmallLine style={{marginBottom: '4%'}}/>
         <MidLine/>
             <CoursesSection>

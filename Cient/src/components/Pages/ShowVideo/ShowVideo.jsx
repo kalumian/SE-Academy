@@ -9,13 +9,9 @@ import {PathNextEp, PathBackEp, Path_Back_One_Unit} from '../../Functions'
 import axios from 'axios'
 import './style.css'
 import LodingPage from '../../Loding'
-
 //fetch Data
-
-
 export default class ShowVideo extends Component{
     state = { TitleCoursesAndEpisode : [], dataFromDataBase : [], StateSpanEndVideo : false,  Loding : false , }
-
     componentDidMount(){
         this.setState({Loding : true})
         axios.get(`https://server-se-academy.herokuapp.com/videos`)
@@ -25,12 +21,10 @@ export default class ShowVideo extends Component{
             this.setState({TitleCoursesAndEpisode : CourseTitle,  Loding : false })})
             .catch(err => console.log(err))
     }
-
     render(){
         const backPage = () => {
             this.props.history.goBack()
         }
-
         // Link & Path
         const PathName = this.props.location.pathname
         const episode = this.props.match.params.episode
@@ -38,17 +32,12 @@ export default class ShowVideo extends Component{
         const PathBackEps = PathBackEp(episode , PathName)
         const Path_Back_One_Units = Path_Back_One_Unit(PathName)
         const Data = this.state.dataFromDataBase
-
         // change mode span after video
         const changeStateSpanEndVideo = () =>{this.setState({StateSpanEndVideo : true })},
          replayVideo = () =>{this.setState({StateSpanEndVideo : false })},
          StateSpanEndVideo = this.state.StateSpanEndVideo;
-         
-
-
         // function Page 
         const CourseEpisode = this.state.TitleCoursesAndEpisode
-        
         function Page(){
            const infoDataArray =  Data.filter(item => CourseEpisode[arr2][0] === item.course_title && CourseEpisode[arr2][1] === item.episode)
            const infoDataComponent = infoDataArray.map(item =>{

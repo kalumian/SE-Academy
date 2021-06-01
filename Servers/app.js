@@ -8,11 +8,7 @@ const { Router } = require('express'),
            { join } = require('path'),
             cors = require('cors');
             require('dotenv').config()
-
-            
 //-----------------------------------------------------
-
-
 const port = process.env.PORT  || 3000
 //Connect With Data Bases
 mongoose.Promise = global.Promise
@@ -23,7 +19,6 @@ mongoose.set('useCreateIndex', true);
 
 //------------------------------------------------------------------
 //--------------------------------
-
 app.use(cors());
 app.listen(port, ()=>console.log('Server Start on Port :  ' + port))
 app.use(express.json()); 
