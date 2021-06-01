@@ -1,29 +1,40 @@
 /* Genral Style*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   direction: rtl;
 }
-@media  screen and  (max-width: 1024px){
-  html{font-size: 15px;}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
 }
-@media  screen and  (max-width: 768px){
-  html{font-size: 13px;}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
 }
-@media  screen and  (max-width: 704px){
-  html{font-size: 12px;}
+@media screen and (max-width: 704px) {
+  html {
+    font-size: 12px;
+  }
 }
-@media  screen and  (max-width: 614px){
-  html{font-size: 12px;}
-  
+@media screen and (max-width: 614px) {
+  html {
+    font-size: 12px;
+  }
 }
-@media  screen and  (max-width: 425px){
-  html{font-size: 11px;}
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 11px;
+  }
 }
-@media  screen and  (max-width: 425px){
-  html{font-size: 10px;}
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 10px;
+  }
 }
 /* Loding Page  */
 .Loding {
@@ -58,25 +69,25 @@ ul.ListSkils {
 li.About-ltem {
   padding: 0.5% 0;
 }
-.connect-List{
+.connect-List {
   margin-right: 15%;
 }
 .connect {
   font-size: 1.1rem;
 }
-@media (max-width:1104px){
+@media (max-width: 1104px) {
   section.Section-About {
-      padding: 0 0%;
-      width: 80%;
+    padding: 0 0%;
+    width: 80%;
   }
 }
-@media (max-width:450px){
+@media (max-width: 450px) {
   section.Section-About {
-      padding: 0 0%;
-      width: 80%;
+    padding: 0 0%;
+    width: 80%;
   }
   li.About-ltem {
-      padding: 2.5% 0;
+    padding: 2.5% 0;
   }
 }
 /*  Home Paragraf  */

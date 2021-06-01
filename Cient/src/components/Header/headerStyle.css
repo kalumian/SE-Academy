@@ -1,147 +1,139 @@
 .Navbar {
-    border-right: 4px solid;
-    border-left: 4px solid;
-    text-align: right;
-    padding: 2%;
-    background: #00bcd4;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  text-align: right;
+  padding: 2%;
+  background: #00bcd4;
 }
 .ListLink {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-
-
-.active{
-    color: #fff;
-    font-weight: 700;
-    width: 15%;
-    text-align: center;
-
+.active {
+  color: #fff;
+  font-weight: 700;
+  width: 15%;
+  text-align: center;
 }
-@media screen and (max-width: 550px){
-    .active{
-        width: 25%;
-    }
+@media screen and (max-width: 550px) {
+  .active {
+    width: 25%;
+  }
 }
 .LinkBar {
-    text-align: center;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    width: 15%;
-    color: #fff;
-    font-weight: 700;
-    transition:   font-size 0.4s;
-    height: 5vh;
-
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  color: #fff;
+  font-weight: 700;
+  transition: font-size 0.4s;
+  height: 5vh;
 }
 .LinkBar ::after {
-    content: "";
-    display: block;
-    width: 0%;
-    background-color: #fff;
-    transition: width 0.4s;
+  content: "";
+  display: block;
+  width: 0%;
+  background-color: #fff;
+  transition: width 0.4s;
 }
 
-.LinkBar :hover:after{
-    width: 85%;
+.LinkBar :hover:after {
+  width: 85%;
 }
-.LinkBar :hover{
-    font-size: 1.1rem;
+.LinkBar :hover {
+  font-size: 1.1rem;
 }
 
 .Link {
-    font-style: normal;
+  font-style: normal;
 }
 
-.dropdown{
-    position: relative;
-    padding-bottom: 2%;
+.dropdown {
+  position: relative;
+  padding-bottom: 2%;
 }
 
 .dropdown-menu {
-    z-index: 1;
-    text-align: left;
-    background: white;
-    left: 0%;
-    width: 200%;
-    display: block;
-    display: none;
-    position:absolute;
-    border: 1px ;
-    border-radius: 2px;
-    height: 100%;
-
+  z-index: 1;
+  text-align: left;
+  background: white;
+  left: 0%;
+  width: 200%;
+  display: block;
+  display: none;
+  position: absolute;
+  border: 1px;
+  border-radius: 2px;
+  height: 100%;
 }
 .itemlist {
-    background: #fff;
-    padding-top: 2%;
-    border-bottom: 2px solid #7bc7d1;
-    color: black;
-    display: block;
-    text-align: center;
-    font-style: normal;
+  background: #fff;
+  padding-top: 2%;
+  border-bottom: 2px solid #7bc7d1;
+  color: black;
+  display: block;
+  text-align: center;
+  font-style: normal;
 }
 
 .DropDownItem {
-    text-decoration: none;
-    font-weight: 700;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .itemlist {
-    padding: 10% 0;
-    border-bottom: 3px solid #068fa1;
-    color: black;
-    display: block;
-    text-align: center;
-    font-style: normal;
+  padding: 10% 0;
+  border-bottom: 3px solid #068fa1;
+  color: black;
+  display: block;
+  text-align: center;
+  font-style: normal;
 }
 .itemlist:hover {
-   text-decoration: underline;
-
+  text-decoration: underline;
 }
 
-.dropdown:hover .dropdown-menu{
-    display: block;
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .visTab {
+  display: block;
+  width: 4%;
+  height: 2px;
+  background: #fff;
+}
+
+@media screen and (min-width: 769px) {
+}
+
+@media screen and (max-width: 768px) {
+  .ListLink {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ListLink {
+    flex-direction: row;
+  }
+  .LinkBar {
+    width: 15%;
+    margin: 2% 0;
+  }
+  .visTab {
     display: block;
-    width: 4%;
-    height: 2px;
-    background: #fff;
+  }
 }
-
-
-
-@media screen and (min-width:769px){
-}
-
-@media screen and (max-width:768px){
-    .ListLink {
-        justify-content: space-between;
-        align-items: center;
-    }
-    .ListLink{
-        flex-direction:row;
-    }
-    .LinkBar {
-        width: 15%;
+@media screen and (max-width: 550px) {
+  .LinkBar {
+    width: 25%;
     margin: 2% 0;
-    }
-    .visTab{
-        display: block;
-    }
+  }
 }
-@media screen and (max-width:550px){
-    .LinkBar {
-        width: 25%;
-    margin: 2% 0;
-    }
-}
-@media screen and (max-width:425px){
-    a.LinkBar {
-        padding-top: 1.5%;
-    }
+@media screen and (max-width: 425px) {
+  a.LinkBar {
+    padding-top: 1.5%;
+  }
 }
